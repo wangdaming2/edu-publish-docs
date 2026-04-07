@@ -18,8 +18,15 @@ Agent 将自动完成以下工作：
 - 消息链路验证
 
 ### 2. GitHub Actions + Cloudflare Pages
-在本地链路跑通后，配置 GitHub Secrets 即可实现自动化上线：
+在本地链路跑通后，配置 GitHub Secrets 即可实现自动化上线。
 
+#### Cloudflare Pages 控制台配置参考：
+- **Framework preset**: `None`
+- **Build command**: `npm run docs:build`
+- **Build output directory**: `.vitepress/dist`
+- **Root directory**: `/` (即仓库根目录)
+
+#### 需要配置的 GitHub Secrets：
 - `CLOUDFLARE_PROJECT_NAME`: Pages 项目名
 - `CLOUDFLARE_API_TOKEN`: API Token
 - `CLOUDFLARE_ACCOUNT_ID`: Account ID

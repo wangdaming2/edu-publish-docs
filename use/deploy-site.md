@@ -17,7 +17,15 @@
 
 ## Cloudflare Pages
 
-建议将 Cloudflare Pages 与仓库的 `test` 分支绑定，实现自动化上线。
+建议将 Cloudflare Pages 与仓库的 `main` (或 `master`) 分支绑定，实现自动化上线。
+
+### 控制台关键参数 (必填)
+| 配置项 | 推荐值 |
+| :--- | :--- |
+| **Framework preset** | `None` |
+| **Build command** | `npm run docs:build` |
+| **Build output directory** | `.vitepress/dist` |
+| **Root directory** | `/` |
 
 ::: warning
 部署时需配置 fallback 到 `index.html`，以确保单页面应用 (SPA) 的路由正常工作。

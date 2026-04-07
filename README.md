@@ -36,4 +36,4 @@ npm run docs:dev
 
 ## 📄 开源协议
 
-本项目遵循 [MIT License](LICENSE) 协议开源。
+本项目遵循 MIT License 协议开源。
